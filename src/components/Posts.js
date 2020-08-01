@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 // import placeholder from '../assets/placeholder.jpg';
@@ -44,7 +45,8 @@ const Posts = () => {
                                     <div className="card shadow-sm h-100">
                                         <img src={post._embedded['wp:featuredmedia'][0].source_url} className="bd-placeholder-img card-img-top" alt={post.title.rendered} />
                                         <div className="card-body">
-                                            <h6><a href={post.link}>{post.title.rendered}</a></h6>
+                                            {/* <h6><a href={post.link}>{post.title.rendered}</a></h6> */}
+                                            <h6><Link to={`/blog/${post.slug}`}>{post.title.rendered}</Link></h6>
                                             {/* <p className="card-text" dangerouslySetInnerHTML={ { __html: post.excerpt.rendered } } /> */}
                                         </div>
                                         <div className="card-footer text-muted">
