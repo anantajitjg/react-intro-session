@@ -13,7 +13,7 @@ const Post = () => {
 
     useEffect( () => {
         const fetchPost = async () => {
-            const response = await axios.get(`https://wp-content.co/wp-json/wp/v2/posts?_embed&slug=${slug}`);
+            const response = await axios.get(`https://wp-content.co/wp-json/wp/v2/posts?_embed=wp:featuredmedia&slug=${slug}`);
 
             setPost(response.data);
             setLoading(false);
