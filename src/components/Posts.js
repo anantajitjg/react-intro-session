@@ -51,7 +51,7 @@ const Posts = () => {
                                         </div>
                                         <div className="card-footer text-muted">
                                             <div className="d-flex justify-content-between align-items-center">
-                                                <span class="badge badge-secondary px-3 py-2">{date.toLocaleDateString('en-IN')}</span>
+                                                <span className="badge badge-secondary px-3 py-2">{date.toLocaleDateString('en-IN')}</span>
                                                 <small className="text-muted text-uppercase">{getReadingTime(post.content.rendered)}</small>
                                             </div>
                                         </div>
