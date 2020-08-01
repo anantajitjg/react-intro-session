@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Demo
+
+HTTP Request with WP-REST API, Routes Handling for wp-content.co
+
+![Demo](demo.gif)
 
 ## Available Scripts
 
